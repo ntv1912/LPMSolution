@@ -1,0 +1,24 @@
+﻿@model Infrastructure.Models.ThuTuc
+@{
+	ViewData["Title"] = "Delete";
+}
+<h1>Delete</h1>
+<h4> ThuTuc</h4>
+<dl class="row">
+	<dt class="col-4">@Html.DisplayNameFor(m=>m.MaThuTuc)</dt>
+	<dd class="col-8">@Html.DisplayFor(m=>m.MaThuTuc)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.TenThuTuc)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.TenThuTuc)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.MoTa)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.MoTa)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.LinhVucId)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.LinhVucId)</dd>
+</dl>
+<div>
+	<form asp-action="Delete">
+		<input asp-for="Id" type="hidden" />
+		<input type="submit" class=" btn btn-danger" value="Delete"/>
+		
+	</form>
+	|<a asp-action="Index" >Back to List</a>
+</div>

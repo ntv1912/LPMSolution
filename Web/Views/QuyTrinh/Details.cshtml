@@ -1,0 +1,21 @@
+﻿@model Infrastructure.Models.QuyTrinh
+@{
+	ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+<h4> QuyTrinh</h4>
+<br />
+<dl class="row">
+	<dt class="col-4">@Html.DisplayNameFor(m => m.MaQuyTrinh)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.MaQuyTrinh)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.TenQuyTrinh)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.TenQuyTrinh)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.MoTa)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.MoTa)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m => m.ThuTucId)</dt>
+	<dd class="col-8">@Html.DisplayFor(m => m.ThuTucId)</dd>
+</dl>
+<div>
+	<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>|
+	<a asp-action="Index">Index</a>
+</div>

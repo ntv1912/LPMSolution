@@ -1,0 +1,33 @@
+﻿@model Infrastructure.Models.LinhVuc
+@{
+	ViewData["Title"] = "Details";
+}
+<h1>
+	Details
+</h1>
+<h4>LinhVuc</h4>
+<br />
+<<dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaLinhVuc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaLinhVuc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenLinhVuc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenLinhVuc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+    </dl>
+<div>
+	<a asp-action="Edit">Edit</a>
+	<a asp-action="Index"> Back to list</a>
+</div>

@@ -1,0 +1,35 @@
+﻿@model Infrastructure.Models.LinhVuc
+@{
+	ViewData["Title"] = "Edit";
+}
+<h1>Edit</h1>
+<h4>LinhVuc</h4>
+<br />
+<div class="row">
+	<div class="col-4">
+		<form asp-action="Edit">
+			<div asp-validation-summary="ModelOnly"></div>
+			
+			<div class=" form-group">
+				<label asp-for="MaLinhVuc" class="control-label"></label>
+				<input asp-for="MaLinhVuc" class="form-control" />
+				<<span asp-validation-for="MaLinhVuc"></span>
+			</div>
+			<div class=" form-group">
+				<label asp-for="TenLinhVuc" class="control-label"></label>
+				<input asp-for="TenLinhVuc" class="form-control" />
+				<<span asp-validation-for="TenLinhVuc"></span>
+			</div>
+			<div class=" form-group">
+				<label asp-for="MoTa" class="control-label"></label>
+				<input asp-for="MoTa" class="form-control" />
+				<<span asp-validation-for="MoTa"></span>
+			</div>
+			<input type="submit" class="btn btn-primary" />
+
+		</form>
+	</div>
+</div>
+<div>
+	<a asp-action="Index">Back to list</a>
+</div>

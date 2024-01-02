@@ -1,0 +1,21 @@
+﻿@model Infrastructure.Models.ThuTuc
+@{
+	ViewData["Title"] = "Details";
+}
+<h1>Details</h1>
+<h4> ThuTuc</h4>
+<br />
+<dl class="row">
+	<dt class="col-4">@Html.DisplayNameFor(m=>m.MaThuTuc)</dt>
+	<dd class="col-8">@Html.DisplayFor(m=>m.MaThuTuc)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m=>m.TenThuTuc)</dt>
+	<dd class="col-8">@Html.DisplayFor(m=>m.TenThuTuc)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m=>m.MoTa)</dt>
+	<dd class="col-8">@Html.DisplayFor(m=>m.MoTa)</dd>
+	<dt class="col-4">@Html.DisplayNameFor(m=>m.LinhVucId)</dt>
+	<dd class="col-8">@Html.DisplayFor(m=>m.LinhVucId)</dd>
+</dl>
+<div> 
+	<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>|
+	<a asp-action="Index">Index</a>
+</div>
