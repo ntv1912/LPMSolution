@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
 /.vs/LPMSolution/FileContentIndex
+=======
+
+*.vsidx
+>>>>>>> 28f356e41c73e293cbcc95c385556b62d1d95a38
