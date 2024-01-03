@@ -12,9 +12,10 @@ namespace Web.Controllers
         {
             _context = context;
         }
-         public async Task<IActionResult> Index()
+         public async Task<IActionResult> Index(string searching)
         {
-            return View(await _context.tbLinhVuc.ToListAsync());
+           
+            return View(await _context.tbLinhVuc.Where(x => x.MaLinhVuc.Contains(searching) || searching == null).ToListAsync()); 
         }
         public async Task<IActionResult> Details(int? id)
         {

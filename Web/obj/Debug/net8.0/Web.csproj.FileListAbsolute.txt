@@ -138,3 +138,4 @@ D:\LPMSolution\Web\obj\Debug\net8.0\refint\Web.dll
 D:\LPMSolution\Web\obj\Debug\net8.0\Web.pdb
 D:\LPMSolution\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 D:\LPMSolution\Web\obj\Debug\net8.0\ref\Web.dll
+D:\LPMSolution\Web\obj\Debug\net8.0\Web.sourcelink.json
